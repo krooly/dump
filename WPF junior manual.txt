@@ -1,0 +1,42 @@
+WPF
+
+Подробный мануал: https://metanit.com/sharp/wpf/
+Доки на MS: https://msdn.microsoft.com/ru-ru/library/ms754130(v=vs.100).aspx
+
+1. Files
+App.xaml - глабальное описание приложения
+App.xaml.cs - дополнение описание на C#
+
+App.xaml - основной файл в котором описывается первоночальное поведение приложения
+Атрибуты:
+StartupUri указывается xaml-файл  первоначального окна. 
+x:Class указывает CS класс к которому будет ссылаться этот xaml "NameSpace.Class"
+
+2. objs & props
+Все графические элементы наследуются от FrameworkElement (UIElement)
+свойства можно определить: 
+- как аргументы 
+	<a b="123"/>
+- как дочерние элементы 
+	<a>
+		<a.b>
+			123
+		</a.b>
+	</a>
+- отдельно из кода 
+	<a/>
+	a.b = 123;
+
+3. Namespaces
+Общий синтаксис подключения пространств имен следующий: xmlns:Префикс="clr-namespace:Пространство_имен;assembly=имя_сборки".
+
+следующее пространство имён используется для "связки с кодом"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	<Button x:Name="btn1">
+
+	btn1.Content = "Текст на кнопке";
+
+
+4. Colors
+Изменение цвета элемента:
+	button1.Background = new SolidColorBrush(Colors.Red);
