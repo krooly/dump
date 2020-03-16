@@ -1,0 +1,168 @@
+<PD_Processing>
+    <value type="xs:unsignedInt" name="ulMachineType">8</value>
+    <value type="xs:string" name="ausComment"></value>
+    <value type="xs:unsignedShort" name="usIsCaymanFile">1</value>
+    <ProFeed> 
+        <value type="xs:unsignedInt" name="ulMonitoringFlags">0</value>
+        <value type="xs:int" name="lCorrection">1000000</value>
+        <value type="xs:short" name="sSpeed">8</value>
+        <value type="xs:short" name="sRamp">9</value>
+        <value type="xs:short" name="sLeftPressure">4</value>
+        <value type="xs:short" name="sLeftStripPressure">5</value>
+        <value type="xs:int" name="lLeftGap">7630</value>
+        <value type="xs:short" name="sRightPressure">6</value>
+        <value type="xs:short" name="sRightStripPressure">7</value>
+        <value type="xs:int" name="lRightGap">7570</value>
+        <value type="xs:int" name="lLongEndGap">9550</value>
+        <value type="xs:int" name="lCuttingPressure">0</value>
+        <value type="xs:unsignedShort" name="usGapBehaviourWhileCutting">0</value>
+        <value type="xs:unsignedShort" name="usLengthMonitoringUseToleranceFromConfig">1</value>
+        <value type="xs:int" name="lLengthMonitoringToleranceAlwaysAllowed">1000</value>
+        <value type="xs:int" name="lLengthMonitoringToleranceMovement">30000</value>
+        <value type="xs:int" name="lLenghtMonitoringResolutionCorrection">1000000</value>
+    </ProFeed>
+    <ProCut> 
+        <value type="xs:unsignedInt" name="ulFlags">2</value>
+        <value type="xs:short" name="sSpeed">0</value>
+        <value type="xs:short" name="sRamp">0</value>
+        <value type="xs:short" name="sBlade">0</value>
+        <value type="xs:short" name="sBladeType">1</value>
+        <value type="xs:int" name="lIntersect">500</value>
+        <value type="xs:int" name="lWait">17500</value>
+        <value type="xs:int" name="lChange">17500</value>
+        <value type="xs:int" name="lPause">0</value>
+        <RightRecuts>
+        </RightRecuts>
+        <LeftRecuts>
+        </LeftRecuts>
+    </ProCut>
+    <ProOptions> 
+        <value type="xs:unsignedInt" name="ulFlags1">10100</value>
+        <value type="xs:int" name="lShortModeStripOffset">0</value>
+        <value type="xs:int" name="lBeltStripLen">1000</value>
+        <value type="xs:int" name="lFullStripTrigger">45000</value>
+        <value type="ECuttingGuideWirePullBackMode" name="eCuttingGuideWirePullBackMode">0</value>
+        <value type="xs:unsignedInt" name="ulCuttingGuideWirePullBackLength">170000</value>
+        <value type="ECuttingGuideMovementMode" name="eCuttingGuideMovementMode">0</value>
+        <value type="xs:unsignedInt" name="ulCuttingGuideMovementWay">0</value>
+        <value type="xs:int" name="lGuideTubePause">0</value>
+        <value type="xs:int" name="lCombingTime">0</value>
+        <value type="xs:unsignedShort" name="usMarkScalingX">1000</value>
+        <value type="xs:unsignedShort" name="usMarkScalingY">1000</value>
+        <ProDevNone> 
+            <value type="xs:unsignedInt" name="ulFlags">4</value>
+            <value type="xs:short" name="sEjectionMode">1</value>
+            <value type="xs:short" name="sSpeedOverride">0</value>
+            <value type="xs:unsignedShort" name="usEjectSpeed">5</value>
+            <value type="xs:unsignedShort" name="usEjectRamp">5</value>
+            <value type="xs:short" name="sEnableKickoff">0</value>
+            <value type="xs:int" name="lEjectionOffset">0</value>
+            <value type="xs:int" name="lKickoff">0</value>
+        </ProDevNone>
+        <ProDevsWS_Passive>
+            <ProDevWS_Passive> 
+                <value type="xs:short" name="sType">4</value>
+                <value type="xs:unsignedInt" name="ulFlags">1</value>
+                <value type="xs:short" name="sSpeedOverride">0</value>
+                <value type="xs:unsignedShort" name="usEjectSpeed">5</value>
+                <value type="xs:unsignedShort" name="usEjectRamp">5</value>
+                <value type="xs:short" name="sEnableKickoff">0</value>
+                <value type="xs:int" name="lEjectionOffset">50000</value>
+                <value type="xs:int" name="lKickoff">0</value>
+                <value type="xs:int" name="lEjectionTime">500000</value>
+                <value type="xs:int" name="lWaitAfterEject">300000</value>
+            </ProDevWS_Passive>
+        </ProDevsWS_Passive>
+        <ProDevsWS_Active>
+            <ProDevWS_Active> 
+                <value type="xs:short" name="sType">1</value>
+                <value type="xs:unsignedInt" name="ulFlags">1</value>
+                <value type="xs:short" name="sSpeedOverride">0</value>
+                <value type="xs:unsignedShort" name="usEjectSpeed">5</value>
+                <value type="xs:unsignedShort" name="usEjectRamp">5</value>
+                <value type="xs:short" name="sEnableKickoff">0</value>
+                <value type="xs:int" name="lEjectionOffset">50000</value>
+                <value type="xs:int" name="lKickoff">0</value>
+                <value type="xs:int" name="lEjectionTime">500000</value>
+                <value type="xs:int" name="lWaitAfterEject">300000</value>
+                <value type="EWSBatchTray" name="eBatchTray">1</value>
+                <value type="EWSBatchProductionStop" name="eBatchProductionStop">2</value>
+            </ProDevWS_Active>
+        </ProDevsWS_Active>
+        <ProDevsCC_PPI>
+            <ProDevCC_PPI> 
+                <value type="xs:short" name="sType">4</value>
+                <value type="xs:unsignedInt" name="ulFlags">1</value>
+                <value type="xs:short" name="sSpeedOverride">0</value>
+                <value type="xs:unsignedShort" name="usEjectSpeed">5</value>
+                <value type="xs:unsignedShort" name="usEjectRamp">5</value>
+                <value type="xs:int" name="lEjectionOffset">0</value>
+                <value type="xs:int" name="lBindingPos">0</value>
+            </ProDevCC_PPI>
+        </ProDevsCC_PPI>
+        <ProDevsCC_CAN>
+            <ProDevCC_CAN> 
+                <value type="xs:short" name="sType">1</value>
+                <value type="xs:unsignedInt" name="ulFlags">1</value>
+                <value type="xs:short" name="sSpeedOverride">0</value>
+                <value type="xs:unsignedShort" name="usEjectSpeed">5</value>
+                <value type="xs:unsignedShort" name="usEjectRamp">5</value>
+                <value type="xs:int" name="lEjectionOffset">0</value>
+                <value type="xs:int" name="lBindingPos">0</value>
+                <value type="xs:short" name="sClamp">0</value>
+                <value type="xs:short" name="sCoil">0</value>
+                <value type="xs:short" name="sCoilPower">0</value>
+                <value type="xs:short" name="sPipe">0</value>
+                <value type="xs:int" name="lHeight">0</value>
+                <value type="xs:int" name="lAdvancePerRevolution">0</value>
+            </ProDevCC_CAN>
+        </ProDevsCC_CAN>
+        <ProDevsCD>
+        </ProDevsCD>
+        <AllowedCartridges>
+        </AllowedCartridges>
+        <value type="xs:unsignedInt" name="ulGuideDiameter">0</value>
+        <value type="xs:unsignedShort" name="usGuideSpeed">0</value>
+        <value type="xs:unsignedShort" name="usGuideRamp">0</value>
+    </ProOptions>
+    <ProRotary> 
+        <value type="xs:unsignedInt" name="ulFlags">0</value>
+        <value type="xs:short" name="sSpeed">5</value>
+        <value type="xs:short" name="sRamp">5</value>
+        <value type="xs:int" name="lCutWait">18000</value>
+        <value type="xs:short" name="sJawSpeed">7</value>
+        <value type="xs:short" name="sJawRamp">7</value>
+        <value type="xs:int" name="lJawWait">1000</value>
+        <value type="xs:int" name="lDistanceCorrection">0</value>
+        <value type="xs:unsignedShort" name="usCenteringPressure">9</value>
+    </ProRotary>
+    <ProElements>
+        <ProElement> 
+            <value type="xs:unsignedInt" name="ulFlags">1</value>
+            <value type="xs:short" name="sLayer">1</value>
+            <value type="xs:short" name="sMode">0</value>
+            <value type="xs:short" name="sBlade">0</value>
+            <value type="xs:short" name="sBladeType">1</value>
+            <value type="xs:int" name="lDiameter">6156</value>
+            <value type="xs:int" name="lWayback">300</value>
+            <value type="xs:short" name="sSpeed">1</value>
+            <value type="xs:short" name="sRamp">1</value>
+            <value type="xs:int" name="lAirJet">0</value>
+            <value type="xs:int" name="lIncisionPause">0</value>
+            <Branches>
+            </Branches>
+            <value type="xs:int" name="lRegripDiameter">5100</value>
+            <value type="xs:int" name="lRegripStripOffset">7000</value>
+            <value type="xs:int" name="lRegripBreakLength">5000</value>
+            <value type="xs:short" name="sCutterType">0</value>
+            <ProElementRotary> 
+                <value type="xs:int" name="lStripOffset">1000</value>
+                <value type="xs:int" name="lRotDiameter">6156</value>
+                <value type="xs:int" name="lRotTime">100000</value>
+                <value type="xs:unsignedShort" name="sRotSpeed">1</value>
+                <value type="xs:unsignedShort" name="sRotRamp">1</value>
+            </ProElementRotary>
+            <value type="xs:unsignedShort" name="usCombingStrokes">0</value>
+        </ProElement>
+    </ProElements>
+</PD_Processing>
